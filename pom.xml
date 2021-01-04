@@ -31,8 +31,6 @@
 
     <properties>
         <cglib.version>3.2.12</cglib.version>
-        <!--自定义 es 依赖版本-->
-        <elasticsearch.version>7.6.2</elasticsearch.version>
         <guava.version>28.0-jre</guava.version>
         <!--自定义 junit 依赖版本-->
         <junit-jupiter.version>5.6.2</junit-jupiter.version>
