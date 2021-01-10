@@ -27,6 +27,7 @@
         <junit-jupiter.version>5.6.2</junit-jupiter.version>
         <!--自定义 lombok 依赖版本-->
         <lombok.version>1.18.8</lombok.version>
+        <rocketmq.version>4.8.0</rocketmq.version>
     </properties>
 
     <dependencyManagement>
@@ -42,6 +43,12 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>${rocketmq.version}</version>
             </dependency>
 
         </dependencies>

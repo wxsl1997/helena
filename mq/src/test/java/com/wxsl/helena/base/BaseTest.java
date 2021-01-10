@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
 @ContextConfiguration(classes = {TestMain.class})
 @ExtendWith(SpringExtension.class)
-@TestPropertySource(value = {"classpath:config/application-unit.properties"})
+@TestPropertySource(value = {"classpath:config/test.properties"})
 public abstract class BaseTest extends AbstractJUnit4SpringContextTests {
 
     @NonNull
