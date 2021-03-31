@@ -22,7 +22,7 @@
 
     <properties>
         <cglib.version>3.2.12</cglib.version>
-        <guava.version>28.0-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <!--自定义 junit 依赖版本-->
         <junit-jupiter.version>5.6.2</junit-jupiter.version>
         <!--自定义 lombok 依赖版本-->
