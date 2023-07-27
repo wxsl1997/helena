@@ -18,16 +18,23 @@
     <modules>
         <module>elasticsearch</module>
         <module>mq</module>
+        <module>report</module>
     </modules>
 
     <properties>
         <cglib.version>3.2.12</cglib.version>
-        <guava.version>28.0-jre</guava.version>
         <!--自定义 junit 依赖版本-->
         <junit-jupiter.version>5.6.2</junit-jupiter.version>
         <!--自定义 lombok 依赖版本-->
         <lombok.version>1.18.8</lombok.version>
         <rocketmq.version>4.8.0</rocketmq.version>
+        <cglib.version>3.2.12</cglib.version>
+        <guava.version>29.0-jre</guava.version>
+        <h2.version>1.4.200</h2.version>
+        <javax-inject.veriosn>1</javax-inject.veriosn>
+        <openapi-ui.version>1.5.2</openapi-ui.version>
+        <transmittable-thread-local.version>2.14.0</transmittable-thread-local.version>
+        <fastjson.version>1.2.80</fastjson.version>
     </properties>
 
     <dependencyManagement>
@@ -43,6 +50,30 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>${javax-inject.veriosn}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${openapi-ui.version}</version>
             </dependency>
 
             <dependency>

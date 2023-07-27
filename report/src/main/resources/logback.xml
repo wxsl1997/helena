@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <pattern>%X{username} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread][%logger{0}] %-5level - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <springProfile name="default,dev,test">
+        <root level="INFO">
+            <appender-ref ref="stdout"/>
+        </root>
+        <logger name="org.springframework" level="INFO"/>
+        <logger name="org.springframework.aop.framework.CglibAopProxy" level="INFO"/>
+        <logger name="org.hibernate.SQL" level="DEBUG"/>
+    </springProfile>
+
+</configuration>
